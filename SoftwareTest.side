@@ -4,94 +4,6 @@
   "name": "SoftwareTest",
   "url": "https://www.amazon.com",
   "tests": [{
-    "id": "7c661633-5d58-4ba5-81fd-36daeb4eed88",
-    "name": "SearchForBooks",
-    "commands": [{
-      "id": "3a7d18fc-d9ac-4b55-acf7-4b903986eda4",
-      "comment": "",
-      "command": "open",
-      "target": "/",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "8b0e8a0d-2172-41c3-9a51-4bd88c566e7c",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1440x900",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "2a29b521-b8ac-4ce8-b37f-a987ca123db0",
-      "comment": "",
-      "command": "runScript",
-      "target": "window.scrollTo(0,0)",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "c90286ae-827c-4f42-96d1-dd27731e6a23",
-      "comment": "",
-      "command": "runScript",
-      "target": "window.scrollTo(0,0)",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "a4ed01cf-b290-4eb6-9ac4-3fa329b5f754",
-      "comment": "",
-      "command": "click",
-      "target": "id=twotabsearchtextbox",
-      "targets": [
-        ["id=twotabsearchtextbox", "id"],
-        ["name=field-keywords", "name"],
-        ["css=#twotabsearchtextbox", "css:finder"],
-        ["xpath=//input[@id='twotabsearchtextbox']", "xpath:attributes"],
-        ["xpath=//form[@id='nav-search-bar-form']/div[2]/div/input", "xpath:idRelative"],
-        ["xpath=//div[2]/div/input", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "5846e1ca-9153-4040-933b-d03815a0151d",
-      "comment": "",
-      "command": "type",
-      "target": "id=twotabsearchtextbox",
-      "targets": [
-        ["id=twotabsearchtextbox", "id"],
-        ["name=field-keywords", "name"],
-        ["css=#twotabsearchtextbox", "css:finder"],
-        ["xpath=//input[@id='twotabsearchtextbox']", "xpath:attributes"],
-        ["xpath=//form[@id='nav-search-bar-form']/div[2]/div/input", "xpath:idRelative"],
-        ["xpath=//div[2]/div/input", "xpath:position"]
-      ],
-      "value": "books"
-    }, {
-      "id": "3436f0d0-c14e-46a6-9f3d-f25a8fc90ea8",
-      "comment": "",
-      "command": "sendKeys",
-      "target": "id=twotabsearchtextbox",
-      "targets": [
-        ["id=twotabsearchtextbox", "id"],
-        ["name=field-keywords", "name"],
-        ["css=#twotabsearchtextbox", "css:finder"],
-        ["xpath=//input[@id='twotabsearchtextbox']", "xpath:attributes"],
-        ["xpath=//form[@id='nav-search-bar-form']/div[2]/div/input", "xpath:idRelative"],
-        ["xpath=//div[2]/div/input", "xpath:position"]
-      ],
-      "value": "${KEY_ENTER}"
-    }, {
-      "id": "fb51083e-d349-4995-a800-4822a40579d4",
-      "comment": "",
-      "command": "runScript",
-      "target": "window.scrollTo(0,535)",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "5cb04ba9-4fa5-4a5a-8554-68d70eb378eb",
-      "comment": "",
-      "command": "runScript",
-      "target": "window.scrollTo(0,722)",
-      "targets": [],
-      "value": ""
-    }]
-  }, {
     "id": "f394a732-024c-4ef5-b3af-c499d927032d",
     "name": "ScrollUpAndDown",
     "commands": [{
@@ -149,6 +61,113 @@
       "command": "runScript",
       "target": "window.scrollTo(0,2047.5)",
       "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "ac8312c2-2858-49ae-a633-7401297f248e",
+    "name": "SearchBooks",
+    "commands": [{
+      "id": "0616746b-3381-49b6-841b-8f98106351a2",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8a81c394-b3e8-4b35-80cd-544ab7acb6f4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x900",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cca84946-f839-4d15-a5ad-2ec734cbdc4b",
+      "comment": "",
+      "command": "type",
+      "target": "id=twotabsearchtextbox",
+      "targets": [
+        ["id=twotabsearchtextbox", "id"],
+        ["name=field-keywords", "name"],
+        ["css=#twotabsearchtextbox", "css:finder"],
+        ["xpath=//input[@id='twotabsearchtextbox']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-bar-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "books"
+    }, {
+      "id": "ad7c532d-1f19-439f-a59d-6adbee94d9f1",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=twotabsearchtextbox",
+      "targets": [
+        ["id=twotabsearchtextbox", "id"],
+        ["name=field-keywords", "name"],
+        ["css=#twotabsearchtextbox", "css:finder"],
+        ["xpath=//input[@id='twotabsearchtextbox']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-bar-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "6790805f-9525-4d89-b666-3aeea9a7ae60",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,386)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1cf9c271-1356-4893-8906-eed74fb1f52f",
+      "comment": "",
+      "command": "click",
+      "target": "css=#p13n-asin-index-0 .a-dynamic-image",
+      "targets": [
+        ["css=#p13n-asin-index-0 .a-dynamic-image", "css:finder"],
+        ["xpath=(//img[@alt='Verity'])[2]", "xpath:img"],
+        ["xpath=//div[@id='p13n-asin-index-0']/div/div/img", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6815602e-ad32-42a6-a3fe-559eae1a73dc",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,935.5)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "532fd076-f807-426e-8c52-1eb4f8b47c02",
+      "comment": "",
+      "command": "click",
+      "target": "css=.a-size-base > .p13n-sc-truncate-desktop-type2",
+      "targets": [
+        ["css=.a-size-base > .p13n-sc-truncate-desktop-type2", "css:finder"],
+        ["xpath=//div[@id='expansion-0']/div/div/div[2]/div[2]/div/a/span/div", "xpath:idRelative"],
+        ["xpath=//a/span/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "12822648-64b1-4422-993e-1a895dafe6a5",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.thumbnail-3 .a-dynamic-image",
+      "targets": [
+        ["css=.thumbnail-3 .a-dynamic-image", "css:finder"],
+        ["xpath=//img[@alt='Ugly Love: A Novel']", "xpath:img"],
+        ["xpath=//div[@id='CardInstanceton9dUtXeGEoNcPLBc7scA']/div/div/ul/li[5]/span/div/a/img", "xpath:idRelative"],
+        ["xpath=//li[5]/span/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c21ecf6f-1932-46eb-b91d-e0976e19d5eb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.thumbnail-3 .a-dynamic-image",
+      "targets": [
+        ["css=.thumbnail-3 .a-dynamic-image", "css:finder"],
+        ["xpath=//img[@alt='Ugly Love: A Novel']", "xpath:img"],
+        ["xpath=//div[@id='CardInstanceton9dUtXeGEoNcPLBc7scA']/div/div/ul/li[5]/span/div/a/img", "xpath:idRelative"],
+        ["xpath=//li[5]/span/div/a/img", "xpath:position"]
+      ],
       "value": ""
     }]
   }],
